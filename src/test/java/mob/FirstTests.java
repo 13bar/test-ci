@@ -30,4 +30,8 @@ class FirstTests {
     @Test
     @DisplayName("Test 6 in SecondTests")
     void test6() {}
+
+    @Test
+    @DisplayName("Test 7 in SecondTests")
+    void test7() {}
 }
