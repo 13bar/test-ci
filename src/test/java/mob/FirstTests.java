@@ -12,18 +12,22 @@ class FirstTests {
     void testOne() {}
 
     @Test
-    @DisplayName("Test one in SecondTests")
+    @DisplayName("Test two in SecondTests")
     void testTwo() {}
 
     @Test
-    @DisplayName("Test one in SecondTests")
+    @DisplayName("Test three in SecondTests")
     void testThree() {}
 
     @Test
-    @DisplayName("Test one in SecondTests")
+    @DisplayName("Test four in SecondTests")
     void testFour() {}
 
     @Test
-    @DisplayName("Test one in SecondTests")
+    @DisplayName("Test five in SecondTests")
     void testFive() {}
+
+    @Test
+    @DisplayName("Test 6 in SecondTests")
+    void test6() {}
 }
