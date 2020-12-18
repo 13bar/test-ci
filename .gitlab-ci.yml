@@ -2,7 +2,6 @@ image: java:8-jdk
 
 stages:
   - smoke
-  - regression
 
 before_script:
   - export GRADLE_USER_HOME=`pwd`/.gradle
@@ -20,19 +19,6 @@ smokeTests:
   script:
     - ./gradlew clean
     - ./gradlew runFirstTests
-  artifacts:
-    paths:
-      - build/allure-results
-    expire_in: 1 week
-
-regressionTests:
-  stage: androidApiTests
-  timeout: 10m
-  only:
-    - regression
-  script:
-    - ./gradlew clean
-    - ./gradlew runSecondTests
   artifacts:
     paths:
       - build/allure-results
