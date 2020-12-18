@@ -18,4 +18,8 @@ class SecondTests {
     @Test
     @DisplayName("Test three in SecondTests")
     void testThree() {}
+
+    @Test
+    @DisplayName("Test four in SecondTests")
+    void testFour() {}
 }
