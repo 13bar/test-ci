@@ -1,7 +1,6 @@
 image: java:8-jdk
 
 stages:
-  - smoke
   - regression
 
 before_script:
@@ -11,19 +10,6 @@ cache:
   paths:
     - .gradle/wrapper
     - .gradle/caches
-
-smokeTests:
-  stage: androidApiTests
-  timeout: 10m
-  only:
-    - smoke
-  script:
-    - ./gradlew clean
-    - ./gradlew runFirstTests
-  artifacts:
-    paths:
-      - build/allure-results
-    expire_in: 1 week
 
 regressionTests:
   stage: androidApiTests
